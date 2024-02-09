@@ -1,13 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', 'sans-serif';
+    font-family: 'Playfair Display', 'sans-serif';
 }
 header {
-    height: 150px;
-    box-shadow: 0 10px 10px 10px #f0f0f0; 
-    background-color: #21211e;
-    position:relaative;
+    background: url('img/background_v_1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: multiply;
+  
+    font-size: 64px;
+    height: 540px;
+    position: relative;
 }
 .fixed-container {
 	width: 100%;
@@ -15,13 +22,15 @@ header {
 	position: relative;
 }
 .logo {
+    padding-left: 50px;
     height: 150px;
     width: 500px;
     position: absolute;
+    color: #DAA520;
 }
 .menu-container {
+    padding-top: 20px;
     position: absolute;
-    padding-top: 65px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,13 +42,15 @@ header {
 	    list-style: none;
     }
 .header-link {
-    font-size: large;
+    font-size: 20px;
     color: #DAA520;  
     text-decoration: none;              
     }
 
 .registration-container {
-    padding: 65px 50px 0 0;
+    padding-right:  50px;
+    padding-top: 20px;
+
     display: flex;
     justify-content: right;
     position: relative;
@@ -49,3 +60,48 @@ header {
         display: inline;
         list-style: none;
     }
+
+.info {
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+}
+    .info-section {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 50%;
+        padding: 20px 20px 50% 20px;
+        color: #fff;
+    }
+
+    .info-section h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .info-section p {
+        line-height: 24px;
+        font-size: 24px;
+        text-align: justify;
+        
+    }
+    
+@media(max-width: 700px){
+    .info-section h1 {
+        font-size: 20px;
+    }    
+}
+
+.fragrance-types {
+    position: relative; 
+
+}
+
+
+
+
+
